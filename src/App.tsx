@@ -14,6 +14,7 @@ function App() {
 
   return (
     <Container justify='center' display='grid'>
+
       <Spacer y={1} />
       <Text h1 size={40} css={{ textGradient: '45deg, $blue600 -20%, $green600 50%', textAlign: 'center' }}>
         Find user repositories
@@ -27,9 +28,14 @@ function App() {
           labelPlaceholder="Github Username"
           initialValue="" onChange={({ target }) => {
             setUsername(target.value)
-          }} />
+          }}
+          onKeyPress={({ key }) => {
+            if (key === 'Enter') mutate()
+          }}
+        />
         <Spacer y={1} />
-        <Button css={{ linearGradient: '45deg, $blue600 -20%, $green600 50%', textAlign: 'center' }}
+        <Button
+          css={{ linearGradient: '45deg, $blue600 -20%, $green600 50%', textAlign: 'center' }}
           type='submit'
           disabled={username === ''}
           onPress={() => mutate()} animated>
@@ -37,6 +43,7 @@ function App() {
         </Button>
         <Spacer y={1} />
       </Container>
+
       {
         data && data?.length > 0 &&
         <ReposCard repositories={data} />
