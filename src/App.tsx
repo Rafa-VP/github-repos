@@ -14,7 +14,6 @@ function App() {
 
   return (
     <Container justify='center' display='grid'>
-
       <Spacer y={1} />
       <Text h1 size={40} css={{ textGradient: '45deg, $blue600 -20%, $green600 50%', textAlign: 'center' }}>
         Search user repositories
