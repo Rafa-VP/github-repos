@@ -10,3 +10,10 @@ button {
 strong {
   font-size: small;
 }
+
+#div {
+  padding-top: 4rem;
+  background: #202020;
+  width: 100vh;
+  height: 100vh;
+}
