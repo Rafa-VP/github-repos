@@ -22,7 +22,7 @@ function App() {
       <Spacer y={1} />
       <Container justify='center' display='grid'>
         <Input
-          style={{ color: 'black' }}
+          style={{ color: 'white' }}
           color='success'
           clearable
           labelPlaceholder="Github Username"
@@ -35,6 +35,7 @@ function App() {
         />
         <Spacer y={1} />
         <Button
+          color={'success'}
           css={{ linearGradient: '45deg, $blue600 -20%, $green600 50%', textAlign: 'center' }}
           type='submit'
           disabled={username === ''}
