@@ -1,19 +1,18 @@
+html {
+  background-color: #202020;
+  height: 100%;
+}
+
 body {
-  padding: 3rem;
-  background: #202020;
-  color: white;
-}
-button {
-  margin-inline: 1%;
+  background-color: #202020;
+  min-height: 100vh;
+  padding: 0;
 }
 
-strong {
-  font-size: small;
+.repo-card {
+  background-color: #ffffffc7;
 }
 
-#div {
-  padding-top: 4rem;
-  background: #202020;
-  width: 100vh;
-  height: 100vh;
+.repo-card-footer {
+  background-color: #ffffff13;
 }
