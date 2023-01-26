@@ -6,7 +6,17 @@ import { QueryClientProvider } from '@tanstack/react-query'
 import queryClient from './queryClient'
 import { createTheme, NextUIProvider } from '@nextui-org/react'
 
-const darkTheme = createTheme({ type: 'dark' })
+const darkTheme = createTheme(
+  {
+    type: 'dark',
+    theme: {
+      colors: {
+        "background": '#202020'
+      }
+    }
+  })
+
+console.log(darkTheme)
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
