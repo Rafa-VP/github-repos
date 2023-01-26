@@ -25,7 +25,7 @@ function App() {
           style={{ color: 'white' }}
           color='success'
           clearable
-          labelPlaceholder="Github Username"
+          labelPlaceholder="Github username"
           initialValue="" onChange={({ target }) => {
             setUsername(target.value)
           }}
