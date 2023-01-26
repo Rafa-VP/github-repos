@@ -17,7 +17,7 @@ function App() {
 
       <Spacer y={1} />
       <Text h1 size={40} css={{ textGradient: '45deg, $blue600 -20%, $green600 50%', textAlign: 'center' }}>
-        Find user repositories
+        Search user repositories
       </Text>
       <Spacer y={1} />
       <Container justify='center' display='grid'>
@@ -40,7 +40,7 @@ function App() {
           type='submit'
           disabled={username === ''}
           onPress={() => mutate()} animated>
-          Search Repositories
+          Search
         </Button>
         <Spacer y={1} />
       </Container>
