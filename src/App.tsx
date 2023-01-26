@@ -8,7 +8,7 @@ function App() {
   const [username, setUsername] = useState<string>('')
   const { data, mutate, isLoading } = useFetchRepositories(username)
   if (isLoading) return (
-    <Container style={{ marginTop: '30%' }} responsive display='grid' justify='center'>
+    <Container style={{ marginTop: '10%' }} responsive display='grid' justify='center'>
       <Loading size='lg' color={'success'} type='points' />
     </Container>)
 
