@@ -53,7 +53,7 @@ function ReposCard({ repositories }: CardProps) {
                   {repo.description}
                 </Text>
               </Card.Body>
-              <Card.Footer className='repo-card-footer' isBlurred>
+              <Card.Footer style={{ backgroundColor: '#ffffff1c' }} isBlurred>
                 <Text size={'$sm'}>
                   {new Date(repo.created_at).toDateString()}
                 </Text>
