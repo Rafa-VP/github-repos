@@ -17,6 +17,7 @@ function ReposCard({ repositories }: CardProps) {
         {repositories.length > 0 && repositories.map((repo) => (
           <Grid xs={12} sm={4} key={repo.id}>
             <Card
+              isHoverable
               className='repo-card'
               isPressable
               variant='flat'
