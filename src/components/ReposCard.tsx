@@ -1,6 +1,5 @@
-import React from 'react'
 import { Repository } from '../hooks/types'
-import { Card, Grid, Text, Link, Badge } from "@nextui-org/react";
+import { Card, Grid, Text, Badge } from "@nextui-org/react";
 
 type CardProps = {
   repositories: Repository[]
@@ -21,7 +20,7 @@ function ReposCard({ repositories }: CardProps) {
               className='repo-card'
               isPressable
               variant='flat'
-              onPress={() => {
+              onClick={() => {
                 if (repo.homepage) window.open(repo.homepage, '_blank')
               }}
             >

@@ -21,6 +21,7 @@ function App() {
       <Spacer y={1} />
       <Container justify='center' display='grid'>
         <Input
+          value={username}
           style={{ color: 'white' }}
           color='success'
           clearable
